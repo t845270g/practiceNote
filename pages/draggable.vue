@@ -6,7 +6,8 @@
         label-position="top"
         style="display: flex;flex-direction: column;align-items: flex-end;"
       >
-      <el-table :data="tableData" style="width:500px;height: 200px;">
+      <el-table :data="tableData" style="width:500px;">
+        <!-- height: 200px; -->
             <el-table-column prop="id" label="拖曳功能" width="100px" align="center" className="move">
               <template #default="scope">
                 ☰
@@ -41,11 +42,11 @@
 <script setup>
   import { useMainStore } from "@/store/currentStore";
   const { $Sortable } = useNuxtApp();
-
   const ruleFormRef = ref(); //實體化表單物件，指向表單的ref
-
   const mainStore = useMainStore();
-  mainStore.routeName="draggable模組"
+  onMounted(()=>{
+      mainStore.routeName="draggable模組"
+  })
   const tableData= ref([
         {
           id:2,
@@ -82,6 +83,7 @@
       orderList.value.push(i.id)
     });
   }
+
   //輸入的內容部分
   const inputBlur=(index,e)=>{
     // console.log(index,e.target.value)

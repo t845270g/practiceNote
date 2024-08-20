@@ -12,7 +12,10 @@
 <script setup>
 import { useMainStore } from "@/store/currentStore";
 const mainStore = useMainStore();
-mainStore.routeName="fortawesome模組"
+onMounted(()=>{
+    mainStore.routeName="fortawesome模組"
+})
+
 </script>
 
 <style></style>

@@ -22,6 +22,12 @@
          <el-button type="success">   
             <NuxtLink to="/draggable">draggable模組</NuxtLink>
          </el-button>
+         <el-button type="success">   
+            <NuxtLink to="/matter">matter模組</NuxtLink>
+         </el-button>
+         <el-button type="success">   
+            <NuxtLink to="/steps">el-steps</NuxtLink>
+         </el-button>
       </div>
 
    </div>
@@ -30,8 +36,9 @@
 <script setup>
 import { useMainStore } from "@/store/currentStore";
 const mainStore = useMainStore();
-mainStore.routeName="This is HomePage."
-
+onMounted(()=>{
+    mainStore.routeName="This is HomePage."
+})
 </script>     
 
 <style>
