@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     //全域套用的樣式匯入(放的是一般的樣式設定)
   css: ['~/assets/scss/main.scss', //設定整份專案套用的主要SCSS樣式
         '@fortawesome/fontawesome-svg-core/styles.css',
-        'animate.css/animate.min.css'
+        'animate.css/animate.min.css',
+        'bootstrap/dist/css/bootstrap.css',
   ],
   build: {
     transpile: [

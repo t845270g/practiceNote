@@ -17,6 +17,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.6",
     "@pinia/nuxt": "^0.5.1",
     "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
     "echarts": "^5.5.0",
     "echarts-wordcloud": "^2.1.0",
     "lodash": "^4.17.21",
